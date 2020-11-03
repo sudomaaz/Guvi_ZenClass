@@ -5,4 +5,4 @@ function transformFirstAndLast(arr) {
  newObject[arr[0]] = a[1];
  return newObject;
 }
-console.log(transformFirstAndLast(arr));
+console.log(transformFirstAndLast(arr)); //
