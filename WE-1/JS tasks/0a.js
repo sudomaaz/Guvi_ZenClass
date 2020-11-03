@@ -56,4 +56,4 @@ task4();
 task5();
 task6();
 task7and8();
-task3();
+task3(); // called after updating two more activities
