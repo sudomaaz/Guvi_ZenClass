@@ -4,7 +4,7 @@
 function printByCity(res){
     res.forEach(element => {
         let name = element.capital;
-        if(name===null)
+        if(name.length===0)
         return;
         let xhr = new XMLHttpRequest();
         let url = "https://api.openweathermap.org/data/2.5/weather?q="+name+"&appid=f968a61f9f752325a30f1979c7d1b74a";
@@ -25,7 +25,7 @@ function printByCity(res){
 function printByCord(res){
     res.forEach(element => {
         let lat = element.latlng[0],long = element.latlng[1];
-        if(lat===null || long===null)
+        if(lat.length===0 || long.length===0)
         return;
         let xhr = new XMLHttpRequest();
         let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=f968a61f9f752325a30f1979c7d1b74a";
