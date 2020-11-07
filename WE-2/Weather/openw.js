@@ -3,8 +3,11 @@
 //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 function printByCity(res){
     res.forEach(element => {
+        let name = element.capital;
+        if(name===null)
+        return;
         let xhr = new XMLHttpRequest();
-        let url = "https://api.openweathermap.org/data/2.5/weather?q="+element.capital+"&appid=f968a61f9f752325a30f1979c7d1b74a";
+        let url = "https://api.openweathermap.org/data/2.5/weather?q="+name+"&appid=f968a61f9f752325a30f1979c7d1b74a";
         xhr.open("GET",url,true);
         xhr.send();
         xhr.onload = function(){
@@ -21,8 +24,11 @@ function printByCity(res){
 }
 function printByCord(res){
     res.forEach(element => {
+        let lat = element.latlng[0],long = element.latlng[1];
+        if(lat===null || long===null)
+        return;
         let xhr = new XMLHttpRequest();
-        let url = "https://api.openweathermap.org/data/2.5/weather?lat="+element.latlng[0]+"&lon="+element.latlng[1]+"&appid=f968a61f9f752325a30f1979c7d1b74a";
+        let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=f968a61f9f752325a30f1979c7d1b74a";
         xhr.open("GET",url,true);
         xhr.send();
         xhr.onload = function(){
