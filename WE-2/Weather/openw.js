@@ -2,7 +2,7 @@
 //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 function printByCity(res){
     res.forEach(element => {
-        let name = element.capital;
+        let name = element.name;
         if(!name)
         return;
         let xhr = new XMLHttpRequest();
