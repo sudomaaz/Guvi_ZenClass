@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple Lodash Test
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+        <script>
+            function check(){
+                var a = {foo:6,bar:5};
+                var b = {bar:5,foo:6};
+                var c = {foo:5, bar:6};
+                var res= "A===B"+_.isEqual(a,b)+"A===C"+_.isEqual(a,c)+"<br>";
+                document.getElementById("1").innerHTML=res;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Click Button below to test for equality</h3>
+        <p>A= {foo:6,bar:5}</p>
+        <p>B= {bar:5,foo:6}</p>
+        <p>C= {foo:5, bar:6}</p>
+        <button onclick="check()">Click me</button>
+        <h4 id="1"></h4>
+    </body>
+</html>
