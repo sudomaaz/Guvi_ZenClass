@@ -2,9 +2,8 @@ var array = [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["rol
 function transformEmployeeData(arr) {
     var tranformEmployeeList = [];
     //Your code
-    let a ={};
     arr.forEach(e => {
-        a= {};
+        let a= {};
         e.forEach(b=>{
            a[b[0]] = b[1];
         });
