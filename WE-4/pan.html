@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pan Application Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-size: 13px;
+            }
+            body {
+                background-color: rgb(255, 255, 221);
+                font-weight: normal;
+                font-family: Arial;
+            }
+            div{
+                background-color: maroon;
+                color: white;
+                text-align: center;
+            }
+            table{
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table.side{
+                border: 0px;
+                border-collapse: collapse;
+                width: 90%;
+            }
+            table.side td{
+                border: 0px;
+                border-collapse: collapse;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Request For New PAN Card Or/And Changes Or Correction in PAN Data</p>
+            <p>Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and instructions .</p>
+        </div>
+        <table>
+            <colgroup>
+                <col style='width: 3%'>
+                <col style='width: 80%'>
+                <col style='width: 17%'>
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <label style='margin-right: 20px;'><em style='color:red'>* &nbsp;</em><b>Whether citizen of India</b></label>
+                    
+                    <label for='CitizenYes'>Yes</label>
+                    <input type='radio' name='IndianCitizen' id='CitizenYes' value='Yes' required>
+                    <label for='CitizenNo'>No</label>
+                    <input type='radio' name='IndianCitizen' id='CitizenNo' value='No' required>
+                </td>
+                <td rowspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <label for='panno'><em style='color:red'>* &nbsp;</em> <b>Permanent Account Number (PAN)</b></label>    
+                    <input name='panno' type="text" id='pan' width='90px'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeName' id='changeNameDetails'>
+                </td>
+                <td>
+                    <label><em style='color:red'>* &nbsp;</em><b>1. Name</b></label>    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <label for='title' style='margin-right: 20px'><b>Title</b></label>
+                    <label for='ShriMr'>Shri/Mr</label>
+                    <input type='radio' name='title' id='titleShriMr' value='ShriMr'>
+                    <label for='SmtMrs'>Smt./Mrs.</label>
+                    <input type='radio' name='title' id='titleSmtMrs' value='SmtMrs'>
+                    <label for='KumariMs'>Kumari/Ms</label>
+                    <input type='radio' name='title' id='titleKumariMs' value='KumariMs'>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 25%'>
+                            <col style='width: 35%'>
+                            <col style='width: 40%'>
+                        </colgroup>
+                        
+                        <thead>
+                            <tr>
+                                <th scope='col'>
+                                    Last Name/Surname
+                                </th>
+                            
+                                <th scope='col'>
+                                    First Name
+                                </th>
+                           
+                                <th scope='col'>
+                                    Middle Name
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style='width: 100%'>
+                            <tr>
+                                <td>
+                                    <input name='Surname' id='surname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='Firstname' id='firstname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='Middlename' id='middlename' type='text' width='200px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                       
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <label><em style='color:red'>* &nbsp;</em><b>Name as you would like it printed on the card </b>(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</label>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type='text' style='display: inline;width: 450px;' name='nameAsOnCard' id='nameasoncard'>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <label><em style='color:red'>* &nbsp;</em><b>Details of Parents. </b><(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed.)</label>
+                </td>
+                <td rowspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                        <col style='width: 40%'>
+                        <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td><b>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b></td>
+                                <td>
+                                    <label for='yes'>Yes</label>
+                                    <input type='radio' name='singleparentmother' id='singleparentmotheryes' value='yes' disabled>
+                                    <label for='no'>No</label>
+                                    <input type='radio' name='singleparentmother' id='singleparentmotherno' value='no' checked>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeFathersName' id='changeFatherNameDetails'>
+                </td>
+                <td>
+                    <label><em style='color:red'>* &nbsp;</em><b>Father's Name</b>(Mandatory field. Even married women should give father's name only.)</label>    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 25%'>
+                            <col style='width: 35%'>
+                            <col style='width: 40%'>
+                        </colgroup>
+                        
+                        <thead>
+                            <tr>
+                                <th scope='col'>
+                                    Last Name/Surname
+                                </th>
+                            
+                                <th scope='col'>
+                                    First Name
+                                </th>
+                           
+                                <th scope='col'>
+                                    Middle Name
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style='width: 100%'>
+                            <tr>
+                                <td>
+                                    <input name='FathersSurname' id='fatherssurname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='FathersFirstname' id='fathersfirstname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='FathersMiddlename' id='fathersmiddlename' type='text' width='200px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                       
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeMothersName' id='changeMotherNameDetails'>
+                </td>
+                <td>
+                    <label><em style='color:red'>* &nbsp;</em>Mother's Name(This field is optional.)</label>    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 25%'>
+                            <col style='width: 35%'>
+                            <col style='width: 40%'>
+                        </colgroup>
+                        
+                        <thead>
+                            <tr>
+                                <th scope='col'>
+                                    Last Name/Surname
+                                </th>
+                            
+                                <th scope='col'>
+                                    First Name
+                                </th>
+                           
+                                <th scope='col'>
+                                    Middle Name
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style='width: 100%'>
+                            <tr>
+                                <td>
+                                    <input name='MothersSurname' id='motherssurname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='MothersFirstname' id='mothersfirstname' type='text' width='200px'>
+                                </td>
+                                <td>
+                                    <input name='MothersMiddlename' id='mothersmiddlename' type='text' width='200px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                       
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label><em style='color:red'>*</em><b>4.&nbsp;Select Parent name which is to be printed on the card</b><br>
+                                        (In case no option is provided then PAN card will be issued with father's name) </label> 
+                                </td>
+                                <td>
+                                    <label for='setFathersName'>Father's Name</label>
+                                    <input type='radio' name='setparentname' id='setFathersName' value='setFathersName' checked>
+                                    <label for='setMothersName'>Mother's Name</label>
+                                    <input type='radio' name='setparentname' id='setMothersName' value='setMothersName'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td rowspan="17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeDOB' id='changeDOBDetails'>
+                </td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody style='width:100%'>
+                            <tr>
+                                <td>
+                                    <label><em style='color:red'>*&nbsp;</em><b>5.&nbsp;Date of Birth/Incorporation/Agreement/Partnership<br>
+                                        or Trust Deed/Formation of Body of Individuals/<br>
+                                        Association of Persons </b></label> 
+                                </td>
+                                <td>
+                                    <table>
+                                        <theader>
+                                            <th>DD</th>
+                                            <th>MM</th>
+                                            <th>YYYY</th>
+                                        </theader>
+                                        <tbody>
+                                            <tr>
+                                                <td><select name='dob-dd'>
+                                                    <OPTION VALUE="" > DD</OPTION>
+                                                    <OPTION VALUE="01" > 1</OPTION>
+                                                    <OPTION VALUE="02" > 2</OPTION>
+                                                    <OPTION VALUE="03" > 3</OPTION>
+                                                    <OPTION VALUE="04" > 4</OPTION>
+                                                    <OPTION VALUE="05" > 5</OPTION>
+                                                    <OPTION VALUE="06" > 6</OPTION>
+                                                    <OPTION VALUE="07" > 7</OPTION>
+                                                    <OPTION VALUE="08" > 8</OPTION>
+                                                    <OPTION VALUE="09" > 9</OPTION>
+                                                    <OPTION VALUE="10" > 10</OPTION>
+                                                    <OPTION VALUE="11" > 11</OPTION>
+                                                    <OPTION VALUE="12" > 12</OPTION>
+                                                    <OPTION VALUE="13" > 13</OPTION>
+                                                    <OPTION VALUE="14" > 14</OPTION>
+                                                    <OPTION VALUE="15" > 15</OPTION>
+                                                    <OPTION VALUE="16" > 16</OPTION>
+                                                    <OPTION VALUE="17" > 17</OPTION>
+                                                    <OPTION VALUE="18" > 18</OPTION>
+                                                    <OPTION VALUE="19" > 19</OPTION>
+                                                    <OPTION VALUE="20" > 20</OPTION>
+                                                    <OPTION VALUE="21" > 21</OPTION>
+                                                    <OPTION VALUE="22" > 22</OPTION>
+                                                    <OPTION VALUE="23" > 23</OPTION>
+                                                    <OPTION VALUE="24" > 24</OPTION>
+                                                    <OPTION VALUE="25" > 25</OPTION>
+                                                    <OPTION VALUE="26" > 26</OPTION>
+                                                    <OPTION VALUE="27" > 27</OPTION>
+                                                    <OPTION VALUE="28" > 28</OPTION>
+                                                    <OPTION VALUE="29" > 29</OPTION>
+                                                    <OPTION VALUE="30" > 30</OPTION>
+                                                    <OPTION VALUE="31" > 31</OPTION>
+                                                </SELECT>
+                                                </td>
+                                                <td>
+                                                    <SELECT name='dob-mm'>
+                                                        <OPTION VALUE="" > MM</OPTION>
+                                                        <OPTION VALUE="01" > JAN</OPTION>
+                                                        <OPTION VALUE="02" > FEB</OPTION>
+                                                        <OPTION VALUE="03" > MAR</OPTION>
+                                                        <OPTION VALUE="04" > APR</OPTION>
+                                                        <OPTION VALUE="05" > MAY</OPTION>
+                                                        <OPTION VALUE="06" > JUN</OPTION>
+                                                        <OPTION VALUE="07" > JUL</OPTION>
+                                                        <OPTION VALUE="08" > AUG</OPTION>
+                                                        <OPTION VALUE="09" > SEP</OPTION>
+                                                        <OPTION VALUE="10" > OCT</OPTION>
+                                                        <OPTION VALUE="11" > NOV</OPTION>
+                                                        <OPTION VALUE="12" > DEC</OPTION>
+                                                    </SELECT>
+                                                </td>
+                                                <td>
+                                                    <input name='dob-yyyy' id='dob-year' type='text'/>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeGender' id='changeGenderDetails'>
+                </td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td style='border-right: solid;'>
+                                    <label><em style='color:red'>* &nbsp;</em><b>6.&nbsp;Gender</b></label> 
+                                </td>
+                                <td>
+                                    <label for='male'>Male</label>
+                                    <input type='radio' name='gender' value='male'>
+                                    <label for='female'>Female</label>
+                                    <input type='radio' name='gender' value='female'>
+                                    <label for='transgender'>TransGender</label>
+                                    <input type='radio' name='gender' value='transgender'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changePhoto' id='changePhotoDetails'>
+                </td>
+                <td>
+                    <label><b>&nbsp;7.&nbsp;Photo Mismatch</b></label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeSignature' id='changeSignatureDetails'>
+                </td>
+                <td>
+                    <label><b>&nbsp;8.&nbsp;Signature Mismatch</b></label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='changeAddress' id='changeAddressDetails' checked>
+                </td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td style='border-right: solid;'>
+                                    <label><em style='color:red'>*&nbsp;</em><b>9.&nbsp;Address for Communication</label> 
+                                </td>
+                                <td>
+                                    <label for='residential'>Residential</label>
+                                    <input type='radio' name='address' id='residential' value='residential'>
+                                    <label for='office'>Office</label>
+                                    <input type='radio' name='address' id='office' value='office'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Office Name</b><i>(to be filled only in case of office address)</i></label> 
+                                </td>
+                                <td>
+                                    <input name='officename' id='officenamedetails' type='text' style='width: 400px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Flat/Door/Block No.</b></label> 
+                                </td>
+                                <td>
+                                    <input name='flatno' id='flatnodetails' type='text' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Name of Premises/Building/Village</b></label> 
+                                </td>
+                                <td>
+                                    <input name='premisesname' id='premisesnamedetails' type='text' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Road/Street/Lane/Post Office</b></label> 
+                                </td>
+                                <td>
+                                    <input name='postofficename' id='postofficenamedetails' type='text' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Area/Locality/Taluka/Sub-Division</b></label> 
+                                </td>
+                                <td>
+                                    <input name='talukaname' id='talukanamedetails' type='text' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Town/City/District</b></label> 
+                                </td>
+                                <td>
+                                    <input name='districtname' id='districtnamedetails' type='text' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>State/Union Territory</b></label> 
+                                </td>
+                                <td>
+                                   <select name='statename' id='statemamedetails'>
+                                    <option value="" >-- Please Select --</option>
+                                    <option value="1" > Andaman & Nicobar Islands</option>
+                                    <option value="2" > Andhra Pradesh</option>
+                                    <option value="3" > Arunachal Pradesh</option>
+                                    <option value="4" > Assam</option>
+                                    <option value="5" > Bihar</option>
+                                    <option value="6" > Chandigarh</option>
+                                    <option value="33" > Chhattisgarh</option>
+                                    <option value="7" > Dadara & Nagar Haveli</option>
+                                    <option value="8" > Daman & Diu</option>
+                                    <option value="9" > Delhi</option>
+                                    <option value="10" > Goa</option>
+                                    <option value="11" > Gujarat</option>
+                                    <option value="12" > Haryana</option>
+                                    <option value="13" > Himachal Pradesh</option>
+                                    <option value="14" > Jammu & Kashmir</option>
+                                    <option value="35" > Jharkhand</option>
+                                    <option value="15" > Karnataka</option>
+                                    <option value="16" > Kerala</option>
+                                    <option value="17" > Lakhswadeep</option>
+                                    <option value="18" > Madhya Pradesh</option>
+                                    <option value="19" > Maharashtra</option>
+                                    <option value="20" > Manipur</option>
+                                    <option value="21" > Meghalaya</option>
+                                    <option value="22" > Mizoram</option>
+                                    <option value="23" > Nagaland</option>
+                                    <option value="24" > Orissa</option>
+                                    <option value="25" > Pondicherry</option>
+                                    <option value="26" > Punjab</option>
+                                    <option value="27" > Rajasthan</option>
+                                    <option value="28" > Sikkim</option>
+                                    <option value="29" > Tamil Nadu</option>
+                                    <option value="36" > Telangana</option>
+                                    <option value="30" > Tripura</option>
+                                    <option value="31" > Uttar Pradesh</option>
+                                    <option value="34" > Uttaranchal</option>
+                                    <option value="32" > West Bengal</option>
+                                     <option value="37" > Ladakh</option>
+                                    <option value="99" > Outside India </option>
+                                   </select>
+                                </td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>PIN</b><i>(Indicating PIN is mandatory)</i></label> 
+                                </td>
+                                <td>
+                                    <input name='pincode' id='pincode' type='text' style='width: 100px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>Country</b></label> 
+                                </td>
+                                <td>
+                                   <select name='country' id='countrydetails' disabled>
+                                        <option value="" >-- Please Select --</option>
+                                        <option value="AR" >Argentina</option>
+                                        <option value="AU" >Australia</option>
+                                        <option value="AT" >Austria</option>
+                                        <option value="BH" >Bahrain</option>
+                                        <option value="BD" >Bangladesh</option>
+                                        <option value="BB" >Barbados</option>
+                                        <option value="BY" >Belarus</option>
+                                        <option value="BE" >Belgium</option>
+                                        <option value="BM" >Bermuda</option>
+                                        <option value="BT" >Bhutan</option>
+                                        <option value="BW" >Botswana</option>
+                                        <option value="BR" >Brazil</option>
+                                        <option value="BN" >Brunei Darussalam</option>
+                                        <option value="BG" >Bulgaria</option>
+                                        <option value="KH" >Cambodia</option>
+                                        <option value="CA" >Canada</option>
+                                        <option value="CV" >Cape Verde</option>
+                                        <option value="KY" >Cayman Islands</option>
+                                        <option value="CN" >China</option>
+                                        <option value="CU" >Cuba</option>
+                                        <option value="CY" >Cyprus</option>
+                                        <option value="DK" >Denmark</option>
+                                        <option value="EG" >Egypt</option>
+                                        <option value="SV" >El Salvador</option>
+                                        <option value="ER" >Eritrea</option>
+                                        <option value="EE" >Estonia</option>
+                                        <option value="ET" >Ethiopia</option>
+                                        <option value="FJ" >Fiji</option>
+                                        <option value="FI" >Finland</option>
+                                        <option value="FR" >France</option>
+                                        <option value="GE" >Georgia</option>
+                                        <option value="DE" >Germany</option>
+                                        <option value="GH" >Ghana</option>
+                                        <option value="GR" >Greece</option>
+                                        <option value="GY" >Guyana</option>
+                                        <option value="HK" >Hong Kong</option>
+                                        <option value="HU" >Hungary</option>
+                                        <option value="IS" >Iceland</option>
+                                        <option value="ID" >Indonesia</option>
+                                        <option value="IR" >Iran, Islamic Republic of</option>
+                                        <option value="IQ" >Iraq</option>
+                                        <option value="IE" >Ireland</option>
+                                        <option value="IL" >Israel</option>
+                                        <option value="IT" >Italy</option>
+                                        <option value="JP" >Japan</option>
+                                        <option value="JO" >Jordan</option>
+                                        <option value="KE" >Kenya</option>
+                                        <option value="KP" >Korea, Democratic People's Republic of</option>
+                                        <option value="KR" >Korea, Republic of</option>
+                                        <option value="KW" >Kuwait</option>
+                                        <option value="LV" >Latvia</option>
+                                        <option value="LU" >Luxembourg</option>
+                                        <option value="MO" >Macao</option>
+                                        <option value="MW" >Malawi</option>
+                                        <option value="MY" >Malaysia</option>
+                                        <option value="MV" >Maldives</option>
+                                        <option value="MU" >Mauritius</option>
+                                        <option value="MX" >Mexico</option>
+                                        <option value="MN" >Mongolia</option>
+                                        <option value="MA" >Morocco</option>
+                                        <option value="NA" >Namibia</option>
+                                        <option value="NR" >Nauru</option>
+                                        <option value="NP" >Nepal</option>
+                                        <option value="NL" >Netherlands</option>
+                                        <option value="NZ" >New Zealand</option>
+                                        <option value="NE" >Niger</option>
+                                        <option value="NG" >Nigeria</option>
+                                        <option value="NO" >Norway</option>
+                                        <option value="OM" >Oman</option>
+                                        <option value="PK" >Pakistan</option>
+                                        <option value="PA" >Panama</option>
+                                        <option value="PG" >Papua New Guinea</option>
+                                        <option value="PH" >Philippines</option>
+                                        <option value="PL" >Poland</option>
+                                        <option value="PT" >Portugal</option>
+                                        <option value="QA" >Qatar</option>
+                                        <option value="RO" >Romania</option>
+                                        <option value="RU" >Russian Federation</option>
+                                        <option value="RW" >Rwanda</option>
+                                        <option value="WS" >Samoa</option>
+                                        <option value="SA" >Saudi Arabia</option>
+                                        <option value="SN" >Senegal</option>
+                                        <option value="SG" >Singapore</option>
+                                        <option value="ZA" >South Africa</option>
+                                        <option value="ES" >Spain</option>
+                                        <option value="LK" >Sri Lanka</option>
+                                        <option value="SD" >Sudan</option>
+                                        <option value="SE" >Sweden</option>
+                                        <option value="CH" >Switzerland</option>
+                                        <option value="TW" >Taiwan, Province of China</option>
+                                        <option value="TZ" >Tanzania, United Republic of</option>
+                                        <option value="TH" >Thailand</option>
+                                        <option value="TN" >Tunisia</option>
+                                        <option value="TR" >Turkey</option>
+                                        <option value="UG" >Uganda</option>
+                                        <option value="UA" >Ukraine</option>
+                                        <option value="AE" >United Arab Emirates</option>
+                                        <option value="GB" >United Kingdom</option>
+                                        <option value="US" >United States of America</option>
+                                        <option value="UY" >Uruguay</option>
+                                        <option value="VN" >Viet Nam</option>
+                                        <option value="YE" >Yemen</option>
+                                        <option value="ZR" >Zair</option>
+                                        <option value="ZM" >Zambia</option>
+                                        <option value="ZW" >Zimbabwe</option>
+                                   </select>
+                                </td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>ZIP</b></label> 
+                                </td>
+                                <td>
+                                    <input name='zip' id='zipdetails' type='text' style='width: 170px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' name='addressproof' id='addressproofavailable'>
+                </td>
+                <td>
+                    <label><b>10.&nbsp;If you desire to update your other address, give required details & <u>Submit proof of other address also.</u></label> 
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type='checkbox' name='telephoneno' id='telephonenodetails'>
+                </td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label><em style='color:red'>* &nbsp;</em><b>11.&nbsp;Telephone No.</b><br>(Country code is compulsory)</label>
+                                </td>
+                                <td style='border-left: solid'>
+                                    <label>Country code (ISD code)</label>
+                                    <br>
+                                    <select name='isdcountrycode' id='isdcode'>
+                                        <option value=''>--Please Select--</option>
+                                        <option value='54'>Argentina (54)</option>
+                                        <option value='61'>Australia (61)</option>
+                                        <option value='43'>Austria (43)</option>
+                                    </select>
+                                    <br>
+                                    <table>
+                                        <colgroup>
+                                            <col style='width:50%'>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td style='border-right: solid'>
+                                                    <input type='radio' name='phoneno' value='mobileno'>
+                                                    <label for='mobileno'>Mobile No.</label>
+                                                </td>
+                                                <td>
+                                                    <input type='radio' name='phoneno' value='landlineno'>
+                                                    <label for='landlineno'>Telephone No.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style='border-right: solid'>
+                                                    <label>Area/STD Code</label>
+                                                    <br>
+                                                    <input type='text' style='width: 40px' name='stdcode' id='areastdcode'>
+                                                </td>
+                                                <td>
+                                                    <label>Telephone No./Mobile No.</label>
+                                                    <br>
+                                                    <input type='text' style='width: 80px' name='telephoneno' id='telephonenodetails'>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr> 
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label><b>E-mail Id</b></label> 
+                                </td>
+                                <td>
+                                    <input name='emailid' id='emailiddetails' type='email' style='width: 290px'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>   
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td  style='border-right: solid;'>
+                                    <label>In case of a citizen of India, then</label> 
+                                </td>
+                                
+                                <td>
+                                    <input name='aadhaaryesno' id='aadhaarselected' type='radio' value='aadhaaryesno'>
+                                    <label for='aadhaaryesno'>AADHAAR</label>
+                                    <input name='aadhaaryesno' id='eidselected' type='radio' value='eidyesno' disabled>
+                                    <label for='eidyesno'>EUID</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <input type='checkbox' name='telephoneno' id='telephonenodetails'>
+                </td>
+                <td>
+                    <table>
+                        <colgroup>
+                            <col style='width: 50%'>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td style='border-right: solid'>
+                                    <label><em style='color:red'>* &nbsp;</em><b>12.&nbsp;AADHAAR number :</b></label>
+                                </td>
+                                <td>
+                                    <input type='text' style='width: 150px' name='aadhaarno' id='aadhaarnodetails'>
+                                    <br>
+                                    <label>In case AADHAAR number is provided,
+                                        then proof of AADHAAR along with supporting documents is to be submitted to NSDL</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class='side'>
+            <colgroup>
+                <col style='width: 30%'>
+                <col style='width: 40%'>
+                <col style='width: 30%'>
+            </colgroup>
+            <tr>
+                <td>
+                    <label style='margin-right: 20px;'><b>For paperless PAN application</b></label>
+                    
+                    <label for='panyes'>Yes</label>
+                    <input type='radio' name='pan' id='panyes' value='Yes' required>
+                    <label for='panno'>No</label>
+                    <input type='radio' name='pan' id='panno' value='No' required>
+                </td>
+                </tr>
+                <tr>
+                    <td>Upload Photo</td>
+                    <td><input type='file' name='profilepic'></td>
+                    <td>
+                        <label for='sign'>Upload Signature &nbsp;&nbsp;</label>
+                        <input type='file' name='signature' id='sign'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Already Uploaded Photo</td>
+                    <td colspan="2"><input type='text' name='text1' size='35'></td>
+                </tr>
+                <tr>
+                    <td>Already Uploaded Signature</td>
+                    <td colspan="2"><input type='text' name='text1' size='15'></td>
+                </tr>
+                <tr>
+                    <td>Already Uploaded Documents</td>
+                    <td><textarea name="text2" row="50" cols="70"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><input type="submit" name="submit"></td>
+                </tr>
+        </table>
+        <br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <br><br>
+    </body>
+</html>
