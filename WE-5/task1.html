@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("Zinc.jpg");
+            font-family: 'Great Vibes', cursive;  
+        }
+        .container{
+            display: flex;
+            flex-direction: column; 
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .content{
+             width: 650px;
+             height: 150px;
+            -webkit-transform: rotate(-1.5deg);
+            -moz-transform: rotate(-1.5deg);
+            -ms-transform: rotate(-1.5deg);
+            -o-transform: rotate(-1.5deg);
+            transform: rotate(-1.5deg);
+        }
+        .top{
+            border: 3px dotted blue;
+            border-bottom: 0px;
+            bottom: 2090px;
+            width: 600px;
+            height : 1872px;
+            position: relative;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        #odd{
+            padding: 30px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 45px;
+        }
+        #even{
+            padding: 30px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="content" id="odd">
+             <span style="font-size: 70px;">S</span>crolling in web design<br>The long and short of it
+         </div>
+         <div class="content" id="even">
+            <span style="font-size: 70px;">L</span>ong scroll the good stuff<br>Visual Creativity
+        </div>
+        <div class="content" id="odd">
+            <span style="font-size: 70px;">S</span>tory Telling<br>Opportunities
+        </div>
+        <div class="content" id="even">
+            <span style="font-size: 70px;">S</span>ample interface for<br>Smart Design users
+        </div>
+        <div class="content" id="odd">
+            <span style="font-size: 70px;">P</span>unchy straight to<br>The point messaging
+        </div>
+        <div class="content" id="even">
+            <span style="font-size: 70px;">E</span>asier for users to<br>Realise their goal
+        </div>
+        <div class="content" id="odd">
+            <span style="font-size: 70px;">L</span>ong scroll<br>You need to be search engine savy
+        </div>
+        <div class="content" id="even">
+            <span style="font-size: 70px;">S</span>lower load times
+        </div>
+        <div class="content" id="odd">
+            <span style="font-size: 70px;">A</span>wkward navigation
+        </div>
+        <div class="content" id="even">
+            <div>This web page has been created by Maaz as a part of Guvi assignment task.</div>
+            <div>&copy;Ifactory</div>
+        </div>
+        <div class="top"></div>
+    </div>
+</body>
+</html>
