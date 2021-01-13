@@ -114,7 +114,7 @@ let score=document.getElementById('score');
 score.innerText=userscore;
 
 
-let uri='https://5fec5eeb573752001730b68d.mockapi.io/highScores';
+let uri='https://5ffeaf57a4a0dd001701ae13.mockapi.io/highScores';
 let insertData=async function(userName,userscore){
     let data = {
         username: userName,
