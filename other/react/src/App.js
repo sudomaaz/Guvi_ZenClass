@@ -10,7 +10,7 @@ export default function App() {
   const [cartList, updateCart] = useState([]);
   //console.log(itemList);
   useEffect(() => {
-    if (itemList.length === 0) {
+    if (!itemList.length) {
       axios
         .get("https://5ffeaf57a4a0dd001701ae13.mockapi.io/guvi")
         .then((res) => {

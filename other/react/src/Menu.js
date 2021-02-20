@@ -1,13 +1,15 @@
 import Card from "./Card";
 
 const Menu = (props) => {
-  let ilist = <p>Loading...</p>;
+  let ilist = (
+    <div className="col">
+      <p className="text-center">Loading...</p>
+    </div>
+  );
 
   const addNewItem = (id) => {
-    const ob = props.list.itemList.map((e) => {
-      if (e.id === id) e.added = true;
-      return e;
-    });
+    const ob = [...props.list.itemList];
+    ob[id].added = true;
     //console.log(ob);
     props.call.updateItem(ob);
     props.call.updateCart([...props.list.cartList, ob[id]]);
