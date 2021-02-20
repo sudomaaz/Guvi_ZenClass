@@ -5,7 +5,7 @@ const Card = (props) => {
         <a href="#">
           <img
             className="card-img-top"
-            src="http://placehold.it/700x400"
+            src="https://placehold.it/700x400"
             alt=""
           />
         </a>
