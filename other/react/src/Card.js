@@ -11,9 +11,9 @@ const Card = (props) => {
         </a>
         <div className="card-body">
           <h4 className="card-title">
-            <a href="#">{props.name}</a>
+            <a href="#">{props.item.name}</a>
           </h4>
-          <h5>${props.price}</h5>
+          <h5>${props.item.price}</h5>
           <p className="card-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
             numquam aspernatur!
@@ -26,8 +26,10 @@ const Card = (props) => {
           <button
             name="addbutton"
             onClick={() => props.call(props.id)}
-            className={props.disable ? "btn btn-secondary" : "btn btn-primary"}
-            disabled={props.disable}
+            className={
+              props.item.added ? "btn btn-secondary" : "btn btn-primary"
+            }
+            disabled={props.item.added}
           >
             Add
           </button>
