@@ -4,9 +4,10 @@ const Menu = (props) => {
   let ilist = <p>Loading...</p>;
 
   const addNewItem = (id) => {
-    const ob = [...props.list.itemList];
-    const ob1 = { ...props.list.itemList[id], added: true };
-    ob[id] = ob1;
+    const ob = props.list.itemList.map((e) => {
+      if (e.id === id) e.added = true;
+      return e;
+    });
     //console.log(ob);
     props.call.updateItem(ob);
     props.call.updateCart([...props.list.cartList, ob[id]]);
@@ -14,7 +15,7 @@ const Menu = (props) => {
 
   if (props.list.itemList.length) {
     ilist = props.list.itemList.map((e, i) => {
-      return <Card key={i} item={e} call={addNewItem} id={i} />;
+      return <Card key={i} item={e} call={addNewItem} />;
     });
   }
   return (

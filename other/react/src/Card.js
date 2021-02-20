@@ -25,7 +25,7 @@ const Card = (props) => {
           </small>
           <button
             name="addbutton"
-            onClick={() => props.call(props.id)}
+            onClick={() => props.call(props.item.id)}
             className={
               props.item.added ? "btn btn-secondary" : "btn btn-primary"
             }

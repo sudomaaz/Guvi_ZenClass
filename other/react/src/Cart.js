@@ -6,9 +6,10 @@ const Cart = (props) => {
     const newList = [...props.list.cartList];
     const deleted = newList.splice(id, 1);
     // console.log(deleted);
-    const ob = [...props.list.itemList];
-    const ob1 = { ...props.list.itemList[deleted[0].id], added: false };
-    ob[deleted[0].id] = ob1;
+    const ob = props.list.itemList.map((e) => {
+      if (e.id === deleted[0].id) e.added = false;
+      return e;
+    });
     props.call.updateItem(ob);
     props.call.updateCart(newList);
   };
